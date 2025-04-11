@@ -7,6 +7,14 @@ pipeline {
     // }
 
     stages {
+        stage('Debug') {
+            steps {
+                script {
+                    echo "Available steps:"
+                    steps.each { stepName -> echo "- ${stepName}" }
+                }
+            }
+        }
         stage('Build') {
             agent {
                 docker {
