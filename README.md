@@ -1,3 +1,5 @@
+[![Build Status](http://localhost:8080/buildStatus/icon?job=demo-pipeline)](http://localhost:8080/job/demo-pipeline/)
+
 # Learn Jenkins App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
