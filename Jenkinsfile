@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-        // Optional: you can inject credentials here if needed
-        // GITHUB_TOKEN = credentials('github-pat')
-    }
+    // environment {
+    //     // Optional: you can inject credentials here if needed
+    //     // GITHUB_TOKEN = credentials('github-pat')
+    // }
 
     stages {
         stage('Build') {
