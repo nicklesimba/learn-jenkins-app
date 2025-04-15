@@ -5,18 +5,14 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'node:18-alpine'
+                    image 'python:3.11-slim'
                     reuseNode true
                 }
             }
             steps {
                 sh ''' 
-                    ls -la
-                    node --version
-                    npm --version
-                    npm ci
-                    npm run build
-                    ls -la
+                    python --version
+                    pip install -r requirements.txt
                 '''
             }
         }
@@ -24,20 +20,20 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'node:18-alpine'
+                    image 'python:3.11-slim'
                     reuseNode true
                 }
             }
             steps {
                 sh '''
-                    test -f build/index.html
+                    python3 app/main.py
                 '''
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'This is where additional stages (such as Deploy) would go'
             }
         }
     }
