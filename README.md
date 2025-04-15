@@ -1,4 +1,5 @@
-[![Build Status](https://8ce6-2600-1700-1e0-4a50-5016-ad4-d17c-f250.ngrok-free.app/buildStatus/icon?job=demo-pipeline)](https://8ce6-2600-1700-1e0-4a50-5016-ad4-d17c-f250.ngrok-free.app/job/demo-pipeline/)
+[![Build Status](https://587e-2600-1700-1e0-4a50-5016-ad4-d17c-f250.ngrok-free.app/buildStatus/icon?job=demo-pipeline)](https://587e-2600-1700-1e0-4a50-5016-ad4-d17c-f250.ngrok-free.app/job/demo-pipeline/)
+
 
 
 # Learn Jenkins App
